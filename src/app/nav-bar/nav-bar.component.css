@@ -1,0 +1,44 @@
+/* Style général de la navbar */
+.navbar {
+  display: flex;
+  justify-content: center;  /* Centrer les éléments horizontalement */
+  align-items: center;      /* Centrer les éléments verticalement */
+  background-color: #343a40; /* Fond sombre pour la navbar */
+  padding: 10px 20px;      /* Un peu de padding autour des éléments */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Ombre pour un effet de profondeur */
+}
+
+/* Style des liens de la navbar */
+.navbar-link {
+  color: #fff;  /* Couleur du texte en blanc */
+  text-decoration: none;  /* Enlever les soulignements par défaut */
+  margin: 0 15px;         /* Espacement entre les liens */
+  font-size: 1rem;        /* Taille de la police */
+  padding: 8px 16px;      /* Padding autour du texte pour améliorer l'espace */
+  border-radius: 5px;     /* Coins arrondis */
+  transition: background-color 0.3s ease; /* Transition douce pour l'effet hover */
+}
+
+/* Effet au survol des liens */
+.navbar-link:hover {
+  background-color: #007bff;  /* Changer la couleur de fond au survol */
+  color: #fff;  /* Garder le texte blanc */
+}
+
+/* Style pour un lien actif */
+.navbar-link.router-link-active {
+  background-color: #28a745;  /* Couleur différente pour le lien actif */
+  color: #fff;
+}
+
+/* Réactivité - pour les écrans plus petits */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;  /* Les éléments s'affichent en colonne sur les petits écrans */
+    align-items: flex-start;  /* Aligner les éléments à gauche */
+  }
+
+  .navbar-link {
+    margin: 10px 0;  /* Espacement vertical entre les liens */
+  }
+}

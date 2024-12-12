@@ -1,0 +1,84 @@
+/* Conteneur principal de la section des détails du menu */
+.menu-details {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Titre du menu */
+.menu-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Description du menu */
+.menu-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Image du menu */
+.menu-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+/* Affichage de la note */
+.menu-rating {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Style pour l'input de la note */
+.input-rating {
+  margin-bottom: 15px;
+}
+
+.input-rating label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.rating-input {
+  width: 60px;
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* Message d'erreur */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Bouton de soumission */
+.submit-button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}

@@ -1,0 +1,87 @@
+/* Style du titre du formulaire */
+.form-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style du formulaire */
+.menu-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels du formulaire */
+.form-label {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Champs de saisie du formulaire */
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+/* Champs de texte (textarea) */
+.form-textarea {
+  height: 100px;
+  resize: vertical;  /* Permet de redimensionner le textarea verticalement */
+}
+
+/* Message d'erreur */
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+/* Aperçu de l'image */
+.image-preview {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Bouton de soumission */
+.submit-button {
+  padding: 12px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+/* Effet au survol du bouton */
+.submit-button:hover {
+  background-color: #218838;
+}
+
+/* Désactivation du bouton lorsque le formulaire est invalide */
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

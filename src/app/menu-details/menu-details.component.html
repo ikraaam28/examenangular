@@ -1,0 +1,35 @@
+<div *ngIf="menu" class="menu-details">
+  <h2 class="menu-title">{{ menu.title }}</h2>
+  <img [src]="menu.image" alt="{{ menu.title }}" class="menu-image" />
+  <p class="menu-description">{{ menu.description }}</p>
+
+  <!-- Affichage de la note -->
+  <div class="menu-rating">
+    <strong>Note: </strong>
+    <span *ngIf="menu.mark === 0">Aucune note n’est attribuée à ce menu</span>
+    <span *ngIf="menu.mark !== 0">{{ menu.mark }}</span>
+  </div>
+
+  <!-- Saisie de la note -->
+  <div class="input-rating">
+    <label for="newMark">Saisir votre note (1 à 5) :</label>
+    <input
+      id="newMark"
+      type="number"
+      [(ngModel)]="newMark"
+      min="1"
+      max="5"
+      placeholder="Note (1-5)"
+      (input)="validateNote()"
+      class="rating-input"
+    />
+  </div>
+
+  <!-- Message d'erreur si la note n'est pas valide -->
+  <div *ngIf="isError" class="error-message">
+    Veuillez entrer un chiffre entre 1 et 5.
+  </div>
+
+  <!-- Bouton pour soumettre la note -->
+  <button (click)="submitRating()" class="submit-button">Noter</button>
+</div>

@@ -1,0 +1,18 @@
+<h2 class="reservations-title">Mes Réservations</h2>
+
+<!-- Si l'utilisateur a des réservations -->
+<div *ngIf="reservations.length > 0; else noReservations" class="reservations-list">
+  <div *ngFor="let menu of reservations" class="reservation-item">
+    <h3 class="reservation-title">{{ menu.title }}</h3>
+    <p class="reservation-description">{{ menu.description }}</p>
+    <img [src]="menu.image" alt="{{ menu.title }}" class="reservation-image" />
+    <div class="reservation-note">
+      <strong>Note:</strong>
+      <span>{{ menu.mark === 0 ? 'Aucune note' : menu.mark }}</span>
+    </div>
+  </div>
+</div>
+
+<ng-template #noReservations>
+  <p class="no-reservations-message">Vous n'avez aucune réservation.</p>
+</ng-template>

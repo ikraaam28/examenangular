@@ -1,0 +1,11 @@
+<div class="menu-list">
+  <div *ngFor="let menu of approvedMenus" class="menu-item">
+    <app-menu [menu]="menu"></app-menu> <!-- Affiche chaque menu avec son composant dédié -->
+
+    <!-- Affichage du lien "Détails" et du bouton "Réserver" sous chaque menu -->
+    <div class="menu-actions">
+      <a [routerLink]="['/menu/details', menu.id]" class="details-link">Détails</a>
+      <button (click)="reserve(menu.id)" class="reserve-button">Réserver</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<h1 class="form-title">Menu à proposer</h1>
+<form [formGroup]="menuForm" (ngSubmit)="onSubmit()" class="menu-form">
+
+  <!-- Titre -->
+  <label for="title" class="form-label">Titre</label>
+  <input id="title" formControlName="title" type="text" class="form-input" />
+  <div *ngIf="menuForm.get('title')?.invalid && menuForm.get('title')?.touched" class="error-message">
+    Le titre est obligatoire.
+  </div>
+
+  <!-- Description -->
+  <label for="description" class="form-label">Description</label>
+  <textarea id="description" formControlName="description" class="form-textarea"></textarea>
+  <div *ngIf="menuForm.get('description')?.invalid && menuForm.get('description')?.touched" class="error-message">
+    La description doit contenir au moins 10 caractères.
+  </div>
+
+
+  <!-- Bouton de soumission -->
+  <button type="submit" [disabled]="menuForm.invalid" class="submit-button">Ajouter</button>
+</form>

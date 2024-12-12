@@ -1,0 +1,66 @@
+{
+  "Menu": [
+    {
+      "id": "1",
+      "title": "Menu Réveillon Classique",
+      "description": "Un menu raffiné et gourmand pour célébrer le passage à la nouvelle année. Avec une entrée légère, un plat principal festif et un dessert exquis, c'est l'expérience idéale pour vos convives lors du réveillon.",
+      "image": "assets/images/téléchargement (1).jpg",
+      "approved": true,
+      "mark": 3.875,
+      "reservations": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Menu Réveillon Végétarien",
+      "description": "Un menu végétarien savoureux pour le réveillon, avec des plats riches en saveurs et en couleurs. Idéal pour les convives à la recherche d'options saines et gourmandes pour la soirée de fête.",
+      "image": "assets/images/téléchargement (3).jpg",
+      "approved": true,
+      "mark": 0,
+      "reservations": []
+    },
+    {
+      "id": "3",
+      "title": "Menu Réveillon Gourmet",
+      "description": "Un menu haut de gamme pour un réveillon inoubliable. Des plats raffinés, soigneusement préparés avec des ingrédients de qualité supérieure pour une soirée exceptionnelle. L'alliance parfaite de tradition et de modernité pour marquer l'occasion.",
+      "image": "assets/images/téléchargement (2).jpg",
+      "approved": true,
+      "mark": 0,
+      "reservations": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "4",
+      "title": "testtttttt",
+      "description": "testttttttt",
+      "image": "assets/images/téléchargement (4).jpg",
+      "approved": true,
+      "mark": 0,
+      "reservations": []
+    },
+    {
+      "id": "5",
+      "title": "menuu jour",
+      "description": "menuu pizzaa ",
+      "image": "",
+      "approved": false,
+      "mark": 0,
+      "reservations": []
+    },
+    {
+      "id": "6",
+      "title": "testt",
+      "description": "testtttttttttt",
+      "image": "",
+      "approved": false,
+      "mark": 0,
+      "reservations": []
+    }
+  ]
+}
